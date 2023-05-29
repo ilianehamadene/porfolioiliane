@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+
+}
+a{
+    all: unset;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+      }
+body{
+    color:#80586D;
+    background-color: #C49D83;
+    display: flex;
+}
+.explication-img{
+    text-align: center;
+    font-size: 1.3vw;
+    margin-top: 5vw;
+    max-width: 70vw;
+}
+.loader{
+    z-index: 1200;
+    position: absolute;
+    top:0;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: #80586D;
+    animation-timing-function: ease-out;
+    -webkit-animation: fade-out 2s;
+          animation: fade-out 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fade-out {
+    85% {
+      opacity: 1;
+    }
+    80% {
+        transform: translateY(-1200px);
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+  }
+header{
+    display: flex;
+}
+.container{
+    width: 100vw;
+display: flex;
+}
+.nav-left{
+    z-index: 600;
+    width: 6%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 30px;
+    display: flex;
+    position: fixed;
+}
+.nav-left-item{
+    flex: 0 auto;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 15px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+.nav-left-item:hover{
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+
+
+}
+
+.nav-left-line{
+    width: 1px;
+    height: 150px;
+    background-color: #80586D;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.nav-porfolio{
+    width: 150px;
+    position: absolute;
+    top: auto;
+    bottom: 6vh;
+    left: 0%;
+    right: 0%;
+}
+@keyframes pop-up {
+    0% {
+        transform: translateY(220px);
+        
+    }
+    70%{
+        transform: translateY(220px);
+    }
+    100%{
+        transform: translateY(0px);
+        color: #C49D83;
+
+    }
+    
+  }
+
+.btn-contact{
+    margin-bottom: 10vw;
+}
+
+.article-projet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    top: 0;
+    margin-left: 10vw;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+.box-booki{
+    all: unset;
+    transition: ease-in-out;
+    -webkit-animation: pop-up 1.3s;
+          animation: pop-up 1.3s;
+        
+}
+.titre-projet{
+    display: flex;
+    flex-direction: column;
+    background-color: #80586D;
+    justify-content: flex-end;
+    align-items: center;
+    color: #C49D83;
+    font-size: 12vw;
+    width: 80vw;
+    height: 95vh;
+}
+
+.img-pres{
+    max-width: 80vw;
+    margin-top: 7vw;
+}
+.explication-projet{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    max-width: 65vw;
+    font-size: 2vw;
+}
+.objectif{
+    margin-top: 3vw;
+    display: flex;
+}
+.inside-objectif{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 40px;
+}
+.high{
+    margin-left: 100px;
+}
+.inside-objectif-title{
+    text-decoration: underline;
+    font-weight: 700;
+}
+.box-booki2{
+    background-color: #80586D;
+    width: 80vw;
+    height: 15vw;
+    z-index: 500;
+}
+
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+}
+.btn:after, .btn:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+.btn:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid #80586D;
+    border-left: 5px solid #80586D;
+}
+.btn:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid #80586D;
+    border-right: 5px solid #80586D;
+}
+.btn:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.btn:hover:before, .btn:hover:after {
+    width: 100%;
+    height: 100%;
+}
+.btn-cv{
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+
+}
+.lower{
+    font-size: 8vw;
+}
