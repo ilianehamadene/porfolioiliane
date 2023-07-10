@@ -5,6 +5,9 @@
     font-weight: 400;
 
 }
+
+
+
 a{
     all: unset;
 }
@@ -179,7 +182,7 @@ p{
   }
 
 
-  @-webkit-keyframes fade-out {
+  @keyframes fade-out {
     85% {
       opacity: 1;
     }
@@ -196,7 +199,7 @@ p{
     }
   }
 
-  @-webkit-keyframes pop-up {
+  @keyframes pop-up {
     0% {
         transform: translateY(180px);
         
@@ -206,13 +209,13 @@ p{
     }
     100%{
         transform: translateY(0px);
-        color:color: #C49D83;
+        color: #C49D83;
 
     }
     
   }
 
-  @-webkit-keyframes img {
+  @keyframes img {
     0% {
         transform: scale(0.5);
     }
@@ -336,4 +339,16 @@ span{
 }
 .btn-contact{
     margin-bottom: 10vw;
+}
+
+.reduce{
+    font-size: 1.3vw;
+}
+
+.down{
+    margin-top: 15vw;
+}
+.cursor{
+    cursor: pointer;
+    margin-top: -0.3vw;
 }
