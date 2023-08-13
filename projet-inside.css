@@ -7,6 +7,11 @@
     font-weight: normal;
     font-style: normal;
 }
+html{
+    width: 100vw;
+    height:100vh;
+    cursor:url('./photos/Ellipse\ 1.svg'), auto;
+}
 * {
     box-sizing: border-box;
     font-family: 'MADEBonVoyage';
@@ -100,7 +105,7 @@ display: flex;
     padding-left: 20px;
     padding-right: 15px;
     transform: rotate(-90deg);
-    cursor: pointer;
+    cursor:url('./photos/Ellipse\ 1-2.svg'), auto;
 }
 .nav-left-item:hover{
     text-decoration: line-through;
@@ -172,6 +177,7 @@ display: flex;
     font-size: 12vw;
     width: 80vw;
     height: 95vh;
+    cursor:url('./photos/whitefull.svg'), auto;
 }
 
 .img-pres{
@@ -224,7 +230,7 @@ display: flex;
 
 
 .btn {
-    cursor: pointer;
+    cursor:url('./photos/Ellipse\ 1-2.svg'), auto;
     position: relative;
     padding: 10px 20px;
     font-size: 28px;
@@ -330,4 +336,7 @@ display: flex;
     .high{
         margin: 20px 40px 0 40px;
     }
+  }
+  .containerimg{
+    display: none;
   }

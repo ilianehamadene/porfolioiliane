@@ -13,7 +13,11 @@
     font-weight: 400;
 
 }
-
+html{
+    width: 100vw;
+    height:100vh;
+    cursor:url('./photos/whitefull.svg'), auto;
+}
 
 
 a{
@@ -69,7 +73,7 @@ display: flex;
     padding-left: 20px;
     padding-right: 15px;
     transform: rotate(-90deg);
-    cursor: pointer;
+    cursor:url('./photos/whitehalf.svg'), auto;
 }
 .nav-left-item:hover{
     text-decoration: line-through;
@@ -136,7 +140,6 @@ p{
 .moi{
     all: unset;
     font-size: 10vw;
-    max-width: 180px;
     transition: ease-in-out;
     -webkit-animation: pop-up 1.9s;
           animation: pop-up 1.9s;
@@ -159,7 +162,6 @@ p{
     text-align: left;
     padding-top: 5%;
     padding-left: 6%;
-    
 }
 
 .nav-right-item {
@@ -172,7 +174,7 @@ p{
     text-decoration: none;
     display: block;
     position: relative;
-    cursor: pointer;
+    cursor:url('./photos/whitehalf.svg'), auto;
     animation: blur 1s;
     
 
@@ -261,7 +263,7 @@ p{
     margin-right: auto;
     margin-top: 6vw;
     margin-bottom: 5vw;
-    cursor: pointer;
+    cursor:url('./photos/whitehalf.svg'), auto;
 }
 span{
     margin:4px;
@@ -314,7 +316,7 @@ span{
 
 
 .btn {
-    cursor: pointer;
+    cursor:url('./photos/whitehalf.svg'), auto;
     position: relative;
     padding: 10px 20px;
     font-size: 28px;
@@ -375,7 +377,7 @@ span{
     margin-top: 15vw;
 }
 .cursor{
-    cursor: pointer;
+    cursor:url('./photos/whitehalf.svg'), auto;
     margin-top: -0.3vw;
 }
 

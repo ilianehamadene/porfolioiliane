@@ -14,6 +14,11 @@
     font-family: 'MADEBonVoyage';
     font-weight: 400;
 }
+html{
+    width: 100vw;
+    height:100vh;
+    cursor:url('./photos/Ellipse\ 1.svg'), auto;
+}
 /* ------color --------*/
 :root {
 
@@ -116,7 +121,7 @@ display: flex;
     padding-left: 20px;
     padding-right: 15px;
     transform: rotate(-90deg);
-    cursor: pointer;
+    cursor:url('./photos/Ellipse\ 1-2.svg'), auto;
 }
 .nav-left-item:hover{
     text-decoration: line-through;
@@ -197,12 +202,12 @@ display: flex;
     justify-content:left;
     margin-top: -20px;
     position: relative;
-    cursor: pointer;
+    cursor:url('./photos/Ellipse\ 1-2.svg'), auto;
     animation: blur 1s;
 }
 
 .nav-right-item a {
-    cursor: pointer;
+    cursor:url('./photos/Ellipse\ 1-2.svg'), auto;
 }
 
 .nav-right-item:hover  {
