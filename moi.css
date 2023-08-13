@@ -21,9 +21,13 @@ html{
 a{
     all: unset;
 }
+.visite-site{
+    font-size: 10px;
+}
 .visite-site:hover{
     cursor:url('./photos/Ellipse\ 1-2.svg'), auto;
     text-decoration: line-through;
+    
 }
 html {
     -webkit-text-size-adjust: 100%;
