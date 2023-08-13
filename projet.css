@@ -135,7 +135,8 @@ p{
 }
 .moi{
     all: unset;
-    font-size: 180px;
+    font-size: 10vw;
+    max-width: 180px;
     transition: ease-in-out;
     -webkit-animation: pop-up 1.9s;
           animation: pop-up 1.9s;
@@ -172,8 +173,13 @@ p{
     display: block;
     position: relative;
     cursor: pointer;
+    animation: blur 1s;
     
 
+}
+
+.test123{
+    display: flex;
 }
 .nav-right-item:hover {
     text-decoration: line-through;
@@ -226,6 +232,27 @@ p{
 
     }
     
+  }
+
+  @keyframes blur {
+    0% {
+        -webkit-filter: blur(30px);
+        -moz-filter: blur(30px);
+        -o-filter: blur(30px);
+        -ms-filter: blur(30px);
+      }
+    90% {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+    }
+    50% {
+      -webkit-filter: blur(30px);
+      -moz-filter: blur(30px);
+      -o-filter: blur(30px);
+      -ms-filter: blur(30px);
+    }
   }
 
   .arrow {
@@ -351,3 +378,36 @@ span{
     cursor: pointer;
     margin-top: -0.3vw;
 }
+
+@media all and (max-width: 1000px) {
+    .test123{
+        flex-direction: column;
+        margin: auto;
+        min-width:60vw
+    }
+    .nav-porfolio{
+        display: none;
+    }
+    .nav-right{
+        margin-top: 40px;
+    }
+    .article-center{
+        margin: auto;
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    .nav-right-item{
+        font-size: 7vw;
+    }
+    .description-moi{
+
+        font-size: 3vw;
+    }
+    .description-moi-plus{
+        font-size: 3vw;
+    }
+    .moi{
+        font-size: 15vw;
+    }
+  }

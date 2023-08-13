@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@font-face {
+    font-family: 'MADEBonVoyage';
+    src:url('./font/MADEBonVoyage.ttf.woff') format('woff'),
+        url('./font/MADEBonVoyage.ttf.svg#MADEBonVoyage') format('svg'),
+        url('./font/MADEBonVoyage.ttf.eot'),
+        url('./font/MADEBonVoyage.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'MADEBonVoyage';
     font-weight: 400;
 }
 .colorbg1{
-    background-color: #80586D;
-    color: #C49D83;
+    background-color: #1a1818;
+    color: #ece7e1;
 } 
 a{
     all: unset;
@@ -16,9 +24,20 @@ html {
     scroll-behavior: smooth;
       }
 body{
-    color:#80586D;
-    background-color: #C49D83;
+    color:#1a1818;
+    background-color: #ece7e1;
     display: flex;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+.imgprojet3 {
+    margin: 20px;
+    width: 80vw;
+    max-width:1000px
+   
 }
 .explication-img{
     text-align: center;
@@ -33,7 +52,7 @@ body{
     left: 0%;
     height: 100vh;
     width: 100vw;
-    background-color: #80586D;
+    background-color: #1a1818;
     animation-timing-function: ease-out;
     -webkit-animation: fade-out 2s;
           animation: fade-out 2s;
@@ -93,7 +112,7 @@ display: flex;
 .nav-left-line {
     width: 1px;
     height: 150px;
-    background-color: #80586D;
+    background-color: #1a1818;
     margin-top: 10px;
     margin-bottom: 80px;
 }
@@ -115,7 +134,7 @@ display: flex;
     }
     100%{
         transform: translateY(0px);
-        color: #C49D83;
+        color: #ece7e1;
 
     }
     
@@ -146,10 +165,10 @@ display: flex;
 .titre-projet{
     display: flex;
     flex-direction: column;
-    background-color: #80586D;
+    background-color: #1a1818;
     justify-content: flex-end;
     align-items: center;
-    color: #C49D83;
+    color: #ece7e1;
     font-size: 12vw;
     width: 80vw;
     height: 95vh;
@@ -159,6 +178,17 @@ display: flex;
     max-width: 80vw;
     margin-top: 7vw;
 }
+
+.carouselimg{
+    width:20vw
+}
+.carouselbox{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    
+
+}
 .explication-projet{
     display: flex;
     justify-content: center;
@@ -166,6 +196,7 @@ display: flex;
     margin-top: 100px;
     max-width: 65vw;
     font-size: 2vw;
+
 }
 .objectif{
     margin-top: 3vw;
@@ -185,7 +216,7 @@ display: flex;
     font-weight: 700;
 }
 .box-booki2{
-    background-color: #80586D;
+    background-color: #1a1818;
     width: 80vw;
     height: 15vw;
     z-index: 500;
@@ -212,14 +243,14 @@ display: flex;
 .btn:after {
     top: -1px;
     left: -1px;
-    border-top: 5px solid #80586D;
-    border-left: 5px solid #80586D;
+    border-top: 5px solid #1a1818;
+    border-left: 5px solid #1a1818;
 }
 .btn:before {
     bottom: -1px;
     right: -1px;
-    border-bottom: 5px solid #80586D;
-    border-right: 5px solid #80586D;
+    border-bottom: 5px solid #1a1818;
+    border-right: 5px solid #1a1818;
 }
 .btn:hover {
     border-top-right-radius: 0px;
@@ -253,8 +284,8 @@ display: flex;
     margin: 0 2%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
     line-height: 0;
-    background-color:#80586D;
-    color: #C49D83;
+    background-color:#1a1818;
+    color: #ece7e1;
     border-radius: 20px;
 }
 .box > img {
@@ -277,3 +308,26 @@ display: flex;
     width: 100%;
     height: 100%;
 }
+
+
+@media all and (max-width: 850px) {
+    .nav-porfolio{
+      display: none;
+    }
+    .explication-projet{
+        font-size: 4vw;
+    }
+    .objectif{
+        flex-direction: column;
+    }
+    .inside-objectif{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .explication-img{
+        font-size: 3vw;
+    }
+    .high{
+        margin: 20px 40px 0 40px;
+    }
+  }

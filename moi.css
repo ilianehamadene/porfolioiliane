@@ -93,7 +93,7 @@ display: flex;
 }
 
 .article-center{
-    max-width: 600px;
+
     margin-left: 17vw;
     display: flex;
     flex-direction: column;
@@ -333,7 +333,42 @@ span{
     margin-bottom: 7vw;
 
 }
-
+@keyframes blur {
+    0% {
+        -webkit-filter: blur(30px);
+        -moz-filter: blur(30px);
+        -o-filter: blur(30px);
+        -ms-filter: blur(30px);
+      }
+    90% {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+    }
+    50% {
+      -webkit-filter: blur(30px);
+      -moz-filter: blur(30px);
+      -o-filter: blur(30px);
+      -ms-filter: blur(30px);
+    }
+  }
+.description-moi{
+    
+    animation: blur 0.8s;
+}
+.description-moi-plus{
+    animation: blur 1s;
+}
+.mon-parcour{
+    animation: blur 1.2s;
+}
+.date{
+    animation: blur 1.4s;
+}
+.fonction{
+    animation: blur 1.6s;
+}
 .skills{
     font-size: 3vw;
 }
@@ -357,3 +392,43 @@ span{
 .img-pres{
     max-width: 80vw;
 }
+
+  @media all and (max-width: 800px) {
+    .nav-right-item{
+        font-size: 7vw;
+    }
+    .description-moi{
+        font-size: 3vw;
+    }
+    .description-moi-plus{
+        font-size: 3vw;
+    }
+    .moi{
+        margin-top: 170px;
+        font-size: 15vw;
+    }
+    .nav-right {
+        display: none;
+    };
+    .mon-parcour{
+        font-size: 10vw;
+    }
+    .date{
+        font-size: 4vw;
+    }
+    .fonction {
+        font-size: 3vw;
+    }
+    .arrow{
+        display: none;
+    }
+    .btn {display: none;}
+    .skills{
+        font-size: 10vw;
+    }
+    .skills-description{
+        font-size: 3vw;
+    }
+    .nav-porfolio{display: none;}
+  }
+
