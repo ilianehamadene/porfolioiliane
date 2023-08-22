@@ -111,9 +111,11 @@ display: flex;
     flex-direction: column;
     
 }
+
 p{
     font-size: 1vw;
 }
+
 .nom {
     all: unset;
     margin-top: 25vw;

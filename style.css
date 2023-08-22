@@ -204,6 +204,7 @@ display: flex;
     position: relative;
     cursor:url('./photos/Ellipse\ 1-2.svg'), auto;
     animation: blur 1s;
+    transform: translate3d(0,0,0);
 }
 
 .nav-right-item a {
@@ -228,6 +229,7 @@ display: flex;
       opacity: 0;
       height: 0;
       width: 0;
+      transform: translateY(1500px);
     }
   }
 
@@ -239,7 +241,7 @@ display: flex;
         transform: translateY(100px);
     }
     100%{
-        transform: translateY(0px);
+        transform: translateY(0);
     }
   }
 
