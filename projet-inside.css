@@ -167,6 +167,12 @@ display: flex;
           animation: pop-up 1.3s;
         
 }
+
+.small{
+    width: 45vw;
+    margin-top: 30px;
+    overflow: hidden;
+}
 .titre-projet{
     display: flex;
     flex-direction: column;
